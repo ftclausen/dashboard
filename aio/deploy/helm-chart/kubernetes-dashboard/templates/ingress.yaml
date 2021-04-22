@@ -68,6 +68,7 @@ spec:
   {{- end -}}
   {{- end -}}
   {{- end -}}
+  test: true
   {{- if .Values.ingress.tls }}
   tls:
 {{ toYaml .Values.ingress.tls | indent 4 }}
