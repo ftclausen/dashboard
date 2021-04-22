@@ -73,3 +73,6 @@ spec:
 {{ toYaml .Values.ingress.tls | indent 4 }}
   {{- end -}}
 {{- end -}}
+  {{- if .Values.ingress.incressClassName }}
+  ingressClassName: {{ .Values.ingress.incressClassName }}
+  {{- end -}}
