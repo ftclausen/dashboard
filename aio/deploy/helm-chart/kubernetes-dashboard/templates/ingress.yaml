@@ -72,7 +72,7 @@ spec:
   tls:
 {{ toYaml .Values.ingress.tls | indent 4 }}
   {{- end -}}
-  {{- if .Values.ingress.incressClassName }}
-  ingressClassName: {{ .Values.ingress.incressClassName }}
+  {{- if .Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
   {{- end -}}
 {{- end -}}
